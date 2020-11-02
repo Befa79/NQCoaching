@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NQ Coaching</title>
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <h2 id="logo">NQ Coaching</h2>
+    </a>
+</header>
+<section id="hero-outer">
+    <div id="hero-image"></div>
+</section>
+<section>
+ <h3>Mindfulness Coaching</h3>
+ <h4>Career development / Psychological Coaching / Emotion management</h4>
+<p>
+It may be that at some point in your life there are situations or that you have certain feelings or questions that you cannot resolve on your own.
+</p>
+<p>
+When the support of friends or family is also perceived as inadequate, it can be valuable to seek professional guidance.
+</p>
+
+</section>
+<section id="beachspirit">
+    <div id="Psylogo">
+        <h4>Meditation</h4>
+    </div>
+    <div id="Meditalogo">
+        <h4>Psychology</h4>
+    </div>
+    <div id="Mentologo">
+        <h4>Mentoring</h4>
+    </div>
+</section>
+<section id="jspart">
+<section>
+<!-- buttons & select label -->
+    <div id="btn">
+        <button type="button" id="button1">Meditation</button>
+        <button type="button" id="button2">Psychology</button>
+        <button type="button" id="button3">Mentoring</button>
+    </div>
+
+    <div id="label"> 
+        <label class="label">Select list</label>
+            <select id="mySelect" onchange="addText1()">
+               <option value = "1">Light</option>
+               <option value = "2">Medium</option>
+               <option value = "3">High</option>
+            </select>
+    </div>
+
+</section>
+<section id="textresult">
+<!-- texts generated from button & label -->
+
+<p id="text1"></p>
+<p id="text2"></p>
+<p id="text3"></p>
+</section>
+</section>
+<script>
+/* eventlistener created to add multiple functions to the button and the selected label */
+
+/* 2 eventlistener from "button1" to trigger 2 functions   */
+document.getElementById("button1").addEventListener("click", selectButton1);
+document.getElementById("button1").addEventListener("click", addText1);
+
+/* 2 eventlistener from "button2" to trigger 2 functions   */
+document.getElementById("button2").addEventListener("click", selectButton2);
+document.getElementById("button2").addEventListener("click", addText2);
+
+/* 2 eventlistener from "button3" to trigger 2 functions   */
+document.getElementById("button3").addEventListener("click", selectButton3);
+document.getElementById("button3").addEventListener("click", addText3);
+
+/* 2 eventlistener from "button1" to trigger 2 functions   */
+document.getElementById("mySelect").addEventListener("change", addText2);
+document.getElementById("mySelect").addEventListener("change", addText3);
+</script>
+
+
+
+    <footer class="main-footer">
+        <ul class="Links">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
